@@ -13,11 +13,21 @@
             TortoiseGit：直接点clone 然后粘贴远端链接
             
 
-第二部：
+第二步：
 与远端仓库关联
     git bash: 用git remote add <name> <url>来添加远端仓库,添加完毕后再push当前本地仓库内容
+
+第三步：
+将远程仓库的内容更新到本地仓库  
+    git bash: git fetch 将远程仓库的内容拉到本地版本库，本地文件暂时不会发生变化
+              git diff <远程仓库名/分支名> 可以对比本地版本库与当前工作区的区别
+              git pull 将远程仓库完全整合到本地工作区
+              git log  查看版本历史
+    git bash完整工作流 先用 git fetch将远程仓库内容同步到本地版本库，
 
 
 推荐建立本地仓库的方式是先在GitHub上建立仓库，再从远端仓库clone过来后，再进行修改再进行提交
 
 将文件提交到缓存区 git add <文件名.后缀>   将文件提交到本地仓库git commit -m"提交文件的备忘录"
+
+注意：进入vim编辑器后用 <:wq>退出 
