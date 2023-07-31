@@ -31,6 +31,7 @@
 vscode中使用git
 点击文件的<+>即为git bash中的 git add 
 在输入框输入提交信息后提交 对应 git commit
+同步更改即为git pull
 
 推荐建立本地仓库的方式是先在GitHub上建立仓库，再从远端仓库clone过来后，再进行修改再进行提交
 
